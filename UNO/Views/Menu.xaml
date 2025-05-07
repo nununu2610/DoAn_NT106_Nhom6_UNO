@@ -1,0 +1,41 @@
+﻿<Window x:Class="UNO.Views.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="450" Width="800">
+
+    <Grid>
+        <!-- Hình nền -->
+        <Image Source="/Images/Menu (3).png" Stretch="Fill" Panel.ZIndex="0"/>
+
+        <!-- Nút Create -->
+        <Button x:Name="btnCreate"
+                Content=""
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="Transparent"
+                Opacity="0"
+                HorizontalAlignment="Left"
+                Height="85"
+                Margin="105,149,0,0"
+                VerticalAlignment="Top"
+                Width="265"
+                Click="btnCreate_Click"
+                Panel.ZIndex="1"/>
+
+        <!-- Nút Join -->
+        <Button x:Name="btnJoin"
+                Content=""
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="Transparent"
+                Opacity="0"
+                HorizontalAlignment="Left"
+                Height="85"
+                Margin="460,149,0,0"
+                VerticalAlignment="Top"
+                Width="265"
+                Click="btnJoin_Click"
+                Panel.ZIndex="1"/>
+        <Button x:Name="btnHowtoPlay" Content=""   Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" Opacity="0" HorizontalAlignment="Left" Height="85" Margin="275,269,0,0" VerticalAlignment="Top" Width="275" Click="btnHowtoPlay_Click"/>
+    </Grid>
+</Window>

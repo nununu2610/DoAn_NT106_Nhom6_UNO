@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Views\CreatedRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CreateRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HowToPlay\Rule7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\JoinRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

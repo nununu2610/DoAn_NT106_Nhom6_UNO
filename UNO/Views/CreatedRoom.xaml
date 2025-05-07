@@ -1,0 +1,18 @@
+﻿<Window x:Class="UNO.Views.CreatedRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UNO.Views"
+        mc:Ignorable="d"
+        Title="CreatedRoom" Height="450" Width="800">
+    <Grid x:Name="txtIP">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Room created (1).png"/>
+        </Grid.Background>
+        <TextBlock x:Name="txtIP1" HorizontalAlignment="Left" Height="40" Margin="299,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347" FontSize="24" Background="#FFFDF9F9"/>
+        <TextBlock x:Name="txtMode" HorizontalAlignment="Left" Height="40" Margin="345,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Background="#FFFDF9F9" FontSize="24"/>
+        <Button x:Name="btnPlay" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent"  Opacity="0"  Content="Button" HorizontalAlignment="Left" Height="65" Margin="595,334,0,0" VerticalAlignment="Top" Width="125"/>
+
+    </Grid>
+</Window>

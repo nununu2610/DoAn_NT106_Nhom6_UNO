@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Create room %283%29.png" />
+    <None Remove="Images\Home %281%29.png" />
+    <None Remove="Images\How to play %281%29.png" />
+    <None Remove="Images\How to play %282%29.png" />
+    <None Remove="Images\How to play %283%29.png" />
+    <None Remove="Images\How to play %284%29.png" />
+    <None Remove="Images\How to play %285%29.png" />
+    <None Remove="Images\How to play %286%29.png" />
+    <None Remove="Images\How to play.png" />
+    <None Remove="Images\Join %283%29.png" />
+    <None Remove="Images\Menu %282%29.png" />
+    <None Remove="Images\Menu %283%29.png" />
+    <None Remove="Images\Room created %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Create room (3).png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Home (1).png" />
+    <Resource Include="Images\How to play (1).png" />
+    <Resource Include="Images\How to play (2).png" />
+    <Resource Include="Images\How to play (3).png" />
+    <Resource Include="Images\How to play (4).png" />
+    <Resource Include="Images\How to play (5).png" />
+    <Resource Include="Images\How to play (6).png" />
+    <Resource Include="Images\How to play.png" />
+    <Resource Include="Images\Join (3).png" />
+    <Resource Include="Images\Menu (2).png" />
+    <Resource Include="Images\Menu (3).png" />
+    <Resource Include="Images\Room created (1).png" />
+  </ItemGroup>
+
+</Project>
