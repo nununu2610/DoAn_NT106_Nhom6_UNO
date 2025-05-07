@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\NT106\DoAn_UNO\UNO\UNO\App.xaml
-131852620262
+15-2085205722
 
-161737909583
+19-525017420
 1981839832580
-MainWindow.xaml;Views\CreatedRoom.xaml;Views\CreateRoom.xaml;Views\Home.xaml;Views\HowToPlay\Rule1.xaml;Views\HowToPlay\Rule2.xaml;Views\HowToPlay\Rule3.xaml;Views\HowToPlay\Rule4.xaml;Views\HowToPlay\Rule5.xaml;Views\HowToPlay\Rule6.xaml;Views\HowToPlay\Rule7.xaml;Views\JoinRoom.xaml;Views\Menu.xaml;
+MainWindow.xaml;Server\Services\GameServer.xaml;Views\CreatedRoom.xaml;Views\CreateRoom.xaml;Views\Game\GameBoard.xaml;Views\Home.xaml;Views\HowToPlay\Rule1.xaml;Views\HowToPlay\Rule2.xaml;Views\HowToPlay\Rule3.xaml;Views\HowToPlay\Rule4.xaml;Views\HowToPlay\Rule5.xaml;Views\HowToPlay\Rule6.xaml;Views\HowToPlay\Rule7.xaml;Views\JoinRoom.xaml;Views\Menu.xaml;
 
-False
+True
 

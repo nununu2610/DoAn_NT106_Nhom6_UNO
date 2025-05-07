@@ -69,7 +69,7 @@ namespace UNO.Views.HowToPlay {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UNO;V1.0.0.0;component/views/howtoplay/rule5.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UNO;component/views/howtoplay/rule5.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\HowToPlay\Rule5.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

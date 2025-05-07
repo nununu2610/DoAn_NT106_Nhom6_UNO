@@ -1,36 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace UNO.Server.Services
 {
-    /// <summary>
-    /// Interaction logic for GameServer.xaml
-    /// </summary>
     public partial class GameServer : Window
     {
-
         private SocketServer server;
+
         public GameServer()
         {
-            server = new SocketServer();
-            server.Start(5000);
             InitializeComponent();
+            server = new SocketServer(); // Chỉ khởi tạo, chưa Start
+        }
+
+        private void buttonStart_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                server.Start(5000); // Start với cổng 5000
+                MessageBox.Show("Server started on port 5000.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to start server: " + ex.Message);
+            }
+        }
+
+        private void buttonStop_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                server.Stop();
+                MessageBox.Show("Server stopped.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to stop server: " + ex.Message);
+            }
+        }
+
+        private void buttonPlay_Click(object sender, RoutedEventArgs e)
+        {
+            // Mở form để vào game (giả định bạn có form GameBoard)
+            GameBoard gameBoard = new GameBoard();
+            gameBoard.Show();
+            this.Close();
         }
 
         protected override void OnClosed(EventArgs e)
         {
-            server?.Stop(); // dừng server khi đóng form
+            server?.Stop(); // Dừng server nếu form bị đóng
             base.OnClosed(e);
         }
     }

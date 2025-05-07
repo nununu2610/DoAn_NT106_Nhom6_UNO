@@ -11,6 +11,9 @@
     <Compile Update="Views\CreateRoom.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Game\GameBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

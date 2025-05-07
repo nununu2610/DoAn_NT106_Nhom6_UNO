@@ -42,3 +42,7 @@ D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\HowToPlay\Rule4.baml
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\HowToPlay\Rule5.baml
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\HowToPlay\Rule6.baml
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\HowToPlay\Rule7.baml
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Server\Services\GameServer.g.cs
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Server\Services\GameServer.baml
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\UNO.sourcelink.json
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\Game\GameBoard.g.cs

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\NT106\\DoAn_UNO\\UNO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\gameserver.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\gameserver.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\game\\gameboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\game\\gameboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\game\\gameboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\game\\gameboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\gameserver.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\gameserver.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\gameserver.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\gameserver.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\joinroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\joinroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\howtoplay\\rule7.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,37 +114,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameBoard.xaml.cs",
+              "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\GameBoard.xaml.cs",
+              "RelativeDocumentMoniker": "UNO\\Views\\Game\\GameBoard.xaml.cs",
+              "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\GameBoard.xaml.cs",
+              "RelativeToolTip": "UNO\\Views\\Game\\GameBoard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:44:05.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameBoard.xaml",
+              "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\GameBoard.xaml",
+              "RelativeDocumentMoniker": "UNO\\Views\\Game\\GameBoard.xaml",
+              "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\GameBoard.xaml",
+              "RelativeToolTip": "UNO\\Views\\Game\\GameBoard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T09:43:18.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JoinRoom.xaml",
+              "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\JoinRoom.xaml",
+              "RelativeDocumentMoniker": "UNO\\Views\\JoinRoom.xaml",
+              "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\JoinRoom.xaml",
+              "RelativeToolTip": "UNO\\Views\\JoinRoom.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T08:59:56.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SocketServer.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\SocketServer.cs",
               "RelativeDocumentMoniker": "UNO\\Server\\Services\\SocketServer.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\SocketServer.cs",
               "RelativeToolTip": "UNO\\Server\\Services\\SocketServer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwDIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T07:09:33.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GameServer.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\GameServer.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Server\\Services\\GameServer.xaml.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\GameServer.xaml.cs",
               "RelativeToolTip": "UNO\\Server\\Services\\GameServer.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T07:04:36.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameServer.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\GameServer.xaml",
               "RelativeDocumentMoniker": "UNO\\Server\\Services\\GameServer.xaml",
@@ -144,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Rule7.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule7.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule7.xaml.cs",
@@ -152,12 +201,11 @@
               "RelativeToolTip": "UNO\\Views\\HowToPlay\\Rule7.xaml.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAnwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T00:06:03.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T00:06:03.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Rule6.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule6.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule6.xaml.cs",
@@ -169,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Rule5.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule5.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule5.xaml.cs",
@@ -181,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Rule4.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule4.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule4.xaml.cs",
@@ -193,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Rule3.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule3.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule3.xaml.cs",
@@ -205,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Rule7.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule7.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule7.xaml",
@@ -216,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Rule6.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule6.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule6.xaml",
@@ -227,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Rule5.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule5.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule5.xaml",
@@ -238,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Rule4.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule4.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule4.xaml",
@@ -249,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Rule3.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule3.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule3.xaml",
@@ -260,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Rule2.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule2.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule2.xaml.cs",
@@ -272,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Rule1.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule1.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule1.xaml.cs",
@@ -284,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Rule1.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule1.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule1.xaml",
@@ -295,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Rule2.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\HowToPlay\\Rule2.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\HowToPlay\\Rule2.xaml",
@@ -306,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Menu.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Menu.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\Menu.xaml.cs",
@@ -318,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\App.xaml",
               "RelativeDocumentMoniker": "UNO\\App.xaml",
@@ -330,18 +378,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Menu.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Menu.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\Menu.xaml",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Menu.xaml",
               "RelativeToolTip": "UNO\\Views\\Menu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T23:24:38.609Z"
+              "WhenOpened": "2025-04-28T23:24:38.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Home.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\Home.xaml.cs",
@@ -353,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Home.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Home.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\Home.xaml",
@@ -364,14 +413,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "CreatedRoom.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\CreatedRoom.xaml",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml",
               "RelativeToolTip": "UNO\\Views\\CreatedRoom.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T23:24:11.236Z"
+              "WhenOpened": "2025-04-28T23:24:11.236Z",
+              "EditorCaption": ""
             }
           ]
         }
