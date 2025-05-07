@@ -43,4 +43,11 @@
     <Resource Include="Images\Room created (1).png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\BlueCard\" />
+    <Folder Include="Images\GreenCard\" />
+    <Folder Include="Images\YellowCard\" />
+    <Folder Include="Images\RedCard\" />
+  </ItemGroup>
+
 </Project>
