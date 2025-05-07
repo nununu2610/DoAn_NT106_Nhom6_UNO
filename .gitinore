@@ -1,4 +1,3 @@
-# Bỏ qua các thư mục hệ thống không cần thiết
 AppData
 Documents
 Downloads
@@ -7,19 +6,16 @@ Pictures
 Videos
 OneDrive
 
-# Bỏ qua các thư mục liên quan đến IDE và build
 .vscode
 .dotnet
 bin
 obj
 .nuget
 
-# Bỏ qua các file hệ thống
 .log
 .tmp
 .bak
 
-# Các file và thư mục tạm
 ntuser.dat.LOG1
 ntuser.dat.LOG2
 ntuser.ini
