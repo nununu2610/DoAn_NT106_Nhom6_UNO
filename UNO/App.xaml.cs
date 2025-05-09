@@ -10,10 +10,10 @@ namespace UNO
         {
             base.OnStartup(e);
 
-            this.ShutdownMode = ShutdownMode.OnExplicitShutdown;
+            this.ShutdownMode = ShutdownMode.OnExplicitShutdown; // không tự shutdown khi 1 cửa sổ đóng
 
             var menu = new Views.Menu();
-            this.MainWindow = menu; // giữ tham chiếu chính
+            this.MainWindow = menu;
             menu.Show();
         }
     }

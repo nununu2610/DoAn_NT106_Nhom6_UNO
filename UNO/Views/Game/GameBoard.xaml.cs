@@ -18,6 +18,9 @@ namespace UNO.Views.Game
         {
             InitializeComponent();
 
+            this.Loaded += (s, e) => MessageBox.Show("GameBoard Loaded");
+            this.Closed += (s, e) => MessageBox.Show("GameBoard Closed");
+
             InitCardButtons();  // Khởi tạo danh sách các button cho player
             LoadCardPaths();  // Tải tất cả các đường dẫn hình ảnh lá bài
             DealCards();  // Chia bài cho các player

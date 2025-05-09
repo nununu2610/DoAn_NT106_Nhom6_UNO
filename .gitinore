@@ -1,10 +1,4 @@
-AppData
-Documents
-Downloads
-Music
-Pictures
-Videos
-OneDrive
+
 
 .vscode
 .dotnet
@@ -21,4 +15,5 @@ ntuser.dat.LOG2
 ntuser.ini
 
 .vs/
+
 

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
+    <SelfContained>false</SelfContained>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -45,11 +46,30 @@
     <Resource Include="Images\START.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Images\BlueCard\" />
-    <Folder Include="Images\GreenCard\" />
-    <Folder Include="Images\YellowCard\" />
-    <Folder Include="Images\RedCard\" />
-  </ItemGroup>
+<ItemGroup>
+  <Resource Include="Images\BlueCards\**\*.png" />
+  <Resource Include="Images\GreenCards\**\*.png" />
+  <Resource Include="Images\RedCards\**\*.png" />
+  <Resource Include="Images\YellowCards\**\*.png" />
+</ItemGroup>
+
+<ItemGroup>
+  <Compile Remove="Images\BlueCard\**" />
+  <Compile Remove="Images\GreenCard\**" />
+  <Compile Remove="Images\RedCard\**" />
+  <Compile Remove="Images\YellowCard\**" />
+  <EmbeddedResource Remove="Images\BlueCard\**" />
+  <EmbeddedResource Remove="Images\GreenCard\**" />
+  <EmbeddedResource Remove="Images\RedCard\**" />
+  <EmbeddedResource Remove="Images\YellowCard\**" />
+  <None Remove="Images\BlueCard\**" />
+  <None Remove="Images\GreenCard\**" />
+  <None Remove="Images\RedCard\**" />
+  <None Remove="Images\YellowCard\**" />
+  <Page Remove="Images\BlueCard\**" />
+  <Page Remove="Images\GreenCard\**" />
+  <Page Remove="Images\RedCard\**" />
+  <Page Remove="Images\YellowCard\**" />
+</ItemGroup>
 
 </Project>

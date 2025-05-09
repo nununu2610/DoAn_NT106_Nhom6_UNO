@@ -1,9 +1,9 @@
 ﻿
 
 FD:\NT106\DoAn_UNO\UNO\UNO\MainWindow.xaml;;
-FD:\NT106\DoAn_UNO\UNO\UNO\Views\Home.xaml;;
-FD:\NT106\DoAn_UNO\UNO\UNO\Views\JoinRoom.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\CreatedRoom.xaml;;
+FD:\NT106\DoAn_UNO\UNO\UNO\Views\Game\GameBoard.xaml;;
+FD:\NT106\DoAn_UNO\UNO\UNO\Views\Home.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule1.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule2.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule3.xaml;;
@@ -11,6 +11,5 @@ FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule4.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule5.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule6.xaml;;
 FD:\NT106\DoAn_UNO\UNO\UNO\Views\HowToPlay\Rule7.xaml;;
-FD:\NT106\DoAn_UNO\UNO\UNO\Server\Services\GameServer.xaml;;
-FD:\NT106\DoAn_UNO\UNO\UNO\Views\Game\GameBoard.xaml;;
+FD:\NT106\DoAn_UNO\UNO\UNO\Views\JoinRoom.xaml;;
 

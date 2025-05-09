@@ -2,6 +2,7 @@
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
+using UNO.Views.Game;
 using static UNO.Views.CreatedRoom;
 
 namespace UNO.Views
@@ -43,20 +44,20 @@ namespace UNO.Views
 
         private void btnCreateRoom_Click(object sender, RoutedEventArgs e)
         {
-            GameServer gameServer = new GameServer();  // Tạo đối tượng GameServer
-            gameServer.Start();  // Khởi động server, sử dụng phương thức Start() từ GameServer
+            GameServer gameServer = new GameServer();
+            gameServer.Start();
 
             string localIP = GetLocalIPAddress();
-
-            // Lấy chế độ chơi từ ComboBox
             string selectedMode = ((ComboBoxItem)cbbCount.SelectedItem)?.Content.ToString() ?? "Unknown";
 
-            // Mở form CreatedRoom và truyền thông tin
             CreatedRoom createdRoom = new CreatedRoom(localIP, selectedMode);
             createdRoom.Show();
 
-            // Đóng form CreateRoom
-            this.Close();
+            GameBoard board = new GameBoard();  // Mở giao diện bàn chơi
+            board.Show();
+
+            this.Close();  // Đóng cửa sổ CreateRoom
         }
+
     }
 }

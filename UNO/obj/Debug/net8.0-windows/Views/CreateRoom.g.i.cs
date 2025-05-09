@@ -84,7 +84,7 @@ namespace UNO.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UNO;V1.0.0.0;component/views/createroom.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UNO;component/views/createroom.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\CreateRoom.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

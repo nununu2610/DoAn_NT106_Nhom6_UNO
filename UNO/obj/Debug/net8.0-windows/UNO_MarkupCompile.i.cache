@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\NT106\DoAn_UNO\UNO\UNO\App.xaml
-15-2085205722
+14-1205053039
 
-211462764324
+221042930379
 1981839832580
-MainWindow.xaml;Server\Services\GameServer.xaml;Views\CreatedRoom.xaml;Views\CreateRoom.xaml;Views\Game\GameBoard.xaml;Views\Home.xaml;Views\HowToPlay\Rule1.xaml;Views\HowToPlay\Rule2.xaml;Views\HowToPlay\Rule3.xaml;Views\HowToPlay\Rule4.xaml;Views\HowToPlay\Rule5.xaml;Views\HowToPlay\Rule6.xaml;Views\HowToPlay\Rule7.xaml;Views\JoinRoom.xaml;Views\Menu.xaml;
+MainWindow.xaml;Views\CreatedRoom.xaml;Views\CreateRoom.xaml;Views\Game\GameBoard.xaml;Views\Home.xaml;Views\HowToPlay\Rule1.xaml;Views\HowToPlay\Rule2.xaml;Views\HowToPlay\Rule3.xaml;Views\HowToPlay\Rule4.xaml;Views\HowToPlay\Rule5.xaml;Views\HowToPlay\Rule6.xaml;Views\HowToPlay\Rule7.xaml;Views\JoinRoom.xaml;Views\Menu.xaml;
 
 False
 
