@@ -1,39 +1,25 @@
-﻿using System;
-using System.Windows;
-using UNO.Server.Services;
-
+﻿// Trong GameServer.cs
 namespace UNO.Server.Services
 {
-    public partial class GameServer : Window
+    // Thêm từ khóa partial nếu bạn đã sử dụng ở phần khai báo UI
+    public partial class GameServer
     {
         private SocketServer _server;
 
         public GameServer()
         {
-            InitializeComponent();
             _server = new SocketServer();
         }
 
-        // Khi nhấn nút Start (Bắt đầu server)
-        private void buttonStart_Click(object sender, RoutedEventArgs e)
+        public void Start()
         {
-            int port = 12345;  // Port mặc định, bạn có thể thay đổi hoặc lấy từ TextBox
+            int port = 12345; // Port mặc định
             _server.Start(port);
-            MessageBox.Show($"Server started on port {port}");
         }
 
-        // Khi nhấn nút Stop (Dừng server)
-        private void buttonStop_Click(object sender, RoutedEventArgs e)
+        public void Stop()
         {
             _server.Stop();
-            MessageBox.Show("Server stopped");
-        }
-
-        // Khi nhấn nút Play (Chế độ chơi bắt đầu)
-        private void buttonPlay_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Game is starting!");
-            // Logic để bắt đầu game (ví dụ: chuyển sang màn hình trò chơi, bắt đầu phân phát bài, v.v.)
         }
     }
 }
