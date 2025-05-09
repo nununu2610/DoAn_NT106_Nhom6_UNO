@@ -2,12 +2,19 @@
 using System.Data;
 using System.Windows;
 
-namespace UNO;
-
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+namespace UNO
 {
-}
+    public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
 
+            this.ShutdownMode = ShutdownMode.OnExplicitShutdown;
+
+            var menu = new Views.Menu();
+            this.MainWindow = menu; // giữ tham chiếu chính
+            menu.Show();
+        }
+    }
+}
