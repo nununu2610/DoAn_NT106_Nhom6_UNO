@@ -12,7 +12,7 @@
         </Grid.Background>
         <TextBlock x:Name="txtIP1" HorizontalAlignment="Left" Height="40" Margin="299,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347" FontSize="24" Background="#FFFDF9F9"/>
         <TextBlock x:Name="txtMode" HorizontalAlignment="Left" Height="40" Margin="345,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Background="#FFFDF9F9" FontSize="24"/>
-        <Button x:Name="btnPlay" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent"  Opacity="0"  Content="Button" HorizontalAlignment="Left" Height="65" Margin="595,334,0,0" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="btnPlay" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent"  Opacity="0"  Content="Button" HorizontalAlignment="Left" Height="65" Margin="595,334,0,0" VerticalAlignment="Top" Width="125" Click="btnPlay_Click"/>
 
     </Grid>
 </Window>

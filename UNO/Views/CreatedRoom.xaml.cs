@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UNO.Server.Services;
+using UNO.Views.Game;
 
 namespace UNO.Views
 {
@@ -32,6 +34,19 @@ namespace UNO.Views
         public CreatedRoom()
         {
             InitializeComponent();
+        }
+
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        {
+            GameServer gameServer = new GameServer();  // Tạo đối tượng GameServer
+            gameServer.Start();  // Khởi động server, sử dụng phương thức Start() từ GameServer
+
+            // 2. Mở giao diện GameBoard
+            GameBoard boardWindow = new GameBoard();
+            boardWindow.Show();
+
+            // 3. Đóng CreateRoom nếu cần
+            this.Close(); // hoặc this.Hide() nếu muốn giữ CreateRoom ở background
         }
     }
 }
