@@ -59,6 +59,9 @@ namespace UNO.Views.Game
                     }
                 }
             }
+
+            // Kiểm tra số lượng ảnh đã load
+            MessageBox.Show("Tổng số lá bài đã load: " + allCardPaths.Count);
         }
 
         private void DealCards()
@@ -66,6 +69,7 @@ namespace UNO.Views.Game
             List<string> cards = new List<string>(allCardPaths);
             Shuffle(cards);  // Trộn bài
 
+            // Kiểm tra đủ bài trước khi chia
             if (cards.Count < 15)
             {
                 MessageBox.Show($"Không đủ lá bài để bắt đầu trò chơi. Hiện có {cards.Count} lá.");
@@ -97,6 +101,7 @@ namespace UNO.Views.Game
                 (list[i], list[j]) = (list[j], list[i]);  // Hoán đổi 2 phần tử
             }
         }
+
         private void SetButtonImage(Button btn, string imagePath)
         {
             Image img = new Image

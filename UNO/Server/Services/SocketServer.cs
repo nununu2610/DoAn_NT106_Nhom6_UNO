@@ -4,7 +4,6 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using UNO.Server.Services; // Đảm bảo namespace chứa GameRoom
 
 namespace UNO.Server
 {
@@ -13,19 +12,18 @@ namespace UNO.Server
         private TcpListener _listener;
         private Thread _listenThread;
         private bool _isRunning;
-        private Dictionary<string, GameRoom> gameRooms; // Quản lý game rooms bằng Dictionary
+        private Dictionary<string, GameRoom> gameRooms;
 
         public SocketServer()
         {
             gameRooms = new Dictionary<string, GameRoom>();
         }
 
-        // Khởi động server
-        public void Start(int port)
+        public void Start(int port = 8888)
         {
             if (_isRunning) return;
 
-            _listener = new TcpListener(IPAddress.Any, port);
+            _listener = new TcpListener(IPAddress.Parse("127.0.0.1"), port);
             _listener.Start();
             _isRunning = true;
 
@@ -38,7 +36,6 @@ namespace UNO.Server
             Console.WriteLine($"Server started on port {port}");
         }
 
-        // Dừng server
         public void Stop()
         {
             _isRunning = false;
@@ -47,7 +44,6 @@ namespace UNO.Server
             Console.WriteLine("Server stopped.");
         }
 
-        // Lắng nghe các client kết nối
         private void ListenForClients()
         {
             while (_isRunning)
@@ -57,7 +53,6 @@ namespace UNO.Server
                     TcpClient client = _listener.AcceptTcpClient();
                     Console.WriteLine("Client connected.");
 
-                    // Khởi tạo một thread riêng cho mỗi client
                     Thread clientThread = new Thread(HandleClientComm)
                     {
                         IsBackground = true
@@ -73,7 +68,6 @@ namespace UNO.Server
             }
         }
 
-        // Xử lý thông tin từ client
         private void HandleClientComm(object clientObj)
         {
             TcpClient client = clientObj as TcpClient;
@@ -83,10 +77,10 @@ namespace UNO.Server
                 NetworkStream stream = client.GetStream();
                 byte[] buffer = new byte[1024];
 
-                while (true) // <-- giữ kết nối
+                while (true)
                 {
                     int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) break; // client ngắt
+                    if (bytesRead == 0) break;
 
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     Console.WriteLine("Received from client: " + message);
@@ -104,57 +98,124 @@ namespace UNO.Server
             }
         }
 
-
-        // Xử lý thông điệp của client (JOIN, các lệnh khác)
-        // Xử lý thông điệp của client (JOIN, các lệnh khác)
         private void ProcessClientMessage(string message, TcpClient client, NetworkStream stream)
         {
-            if (message.StartsWith("JOIN"))
+            if (string.IsNullOrEmpty(message)) return;
+
+            string[] parts = message.Split('|');
+            string command = parts[0];
+
+            switch (command)
             {
-                string[] parts = message.Split('|');
-                if (parts.Length == 3)
-                {
-                    string playerName = parts[1];
-                    string roomIP = parts[2];
-
-                    // Tìm hoặc tạo phòng
-                    GameRoom room = GetOrCreateGameRoom(roomIP);
-                    if (!room.IsFull)
+                case "CREATE":
+                    if (parts.Length >= 3)
                     {
-                        byte[] okResponse = Encoding.UTF8.GetBytes("OK");
-                        stream.Write(okResponse, 0, okResponse.Length);  // Phản hồi thành công
+                        string playerName = parts[1];
+                        string mode = parts[2];
+                        string roomID = Guid.NewGuid().ToString().Substring(0, 6);
 
-                        // Sau đó thêm player vào phòng
-                        room.AddPlayer(client, playerName);
+                        GameRoom room = new GameRoom(roomID);
+                        room.AddPlayer(new Player { Name = playerName, Stream = stream });
+
+                        gameRooms[roomID] = room;
+                        SendToClient(stream, $"ROOM_CREATED|{roomID}");
                     }
                     else
                     {
-                        byte[] failResponse = Encoding.UTF8.GetBytes("ROOM_FULL");
-                        stream.Write(failResponse, 0, failResponse.Length);  // Phản hồi phòng đầy
+                        SendToClient(stream, "INVALID_CREATE_FORMAT");
                     }
-                }
-                else
-                {
-                    byte[] failResponse = Encoding.UTF8.GetBytes("INVALID_FORMAT");
-                    stream.Write(failResponse, 0, failResponse.Length);  // Phản hồi lỗi định dạng
-                }
+                    break;
+
+                case "JOIN":
+                    if (parts.Length >= 3)
+                    {
+                        string playerName = parts[1];
+                        string roomID = parts[2];
+
+                        if (!gameRooms.ContainsKey(roomID))
+                        {
+                            SendToClient(stream, "ROOM_NOT_FOUND");
+                            return;
+                        }
+
+                        GameRoom room = gameRooms[roomID];
+                        bool joined = room.AddPlayer(new Player { Name = playerName, Stream = stream });
+
+                        string response = joined ? "JOINED" : "ROOM_FULL";
+                        SendToClient(stream, response);
+                    }
+                    else
+                    {
+                        SendToClient(stream, "INVALID_JOIN_FORMAT");
+                    }
+                    break;
+
+                case "GET_PLAYERS":
+                    if (parts.Length >= 2)
+                    {
+                        string roomID = parts[1];
+                        if (gameRooms.TryGetValue(roomID, out GameRoom room))
+                        {
+                            var playerNames = room.GetPlayerNames();
+                            string playerList = "PLAYER_LIST|" + string.Join(",", playerNames);
+                            SendToClient(stream, playerList);
+                        }
+                        else
+                        {
+                            SendToClient(stream, "ROOM_NOT_FOUND");
+                        }
+                    }
+                    else
+                    {
+                        SendToClient(stream, "INVALID_GET_PLAYERS_FORMAT");
+                    }
+                    break;
+
+                default:
+                    SendToClient(stream, "UNKNOWN_COMMAND");
+                    break;
             }
         }
 
-
-
-
-
-        // Tìm phòng hoặc tạo mới nếu không có
-        private GameRoom GetOrCreateGameRoom(string roomIP)
+        private void SendToClient(NetworkStream stream, string message)
         {
-            if (!gameRooms.ContainsKey(roomIP))
-            {
-                var room = new GameRoom(roomIP);
-                gameRooms.Add(roomIP, room);
-            }
+            byte[] data = Encoding.UTF8.GetBytes(message);
+            stream.Write(data, 0, data.Length);
+        }
+    }
 
-            return gameRooms[roomIP];
+    public class Player
+    {
+        public string Name { get; set; }
+        public NetworkStream Stream { get; set; }
+    }
+
+    public class GameRoom
+    {
+        public string RoomID { get; set; }
+        private List<Player> players = new List<Player>();
+        private const int MaxPlayers = 4;
+
+        public GameRoom(string roomID)
+        {
+            RoomID = roomID;
+        }
+
+        public bool AddPlayer(Player player)
+        {
+            if (players.Count >= MaxPlayers)
+                return false;
+
+            players.Add(player);
+            return true;
+        }
+
+        public List<string> GetPlayerNames()
+        {
+            List<string> names = new List<string>();
+            foreach (var p in players)
+                names.Add(p.Name);
+            return names;
         }
     }
 }

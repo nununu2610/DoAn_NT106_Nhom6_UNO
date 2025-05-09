@@ -11,13 +11,15 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/Create room (3).png"/>
         </Grid.Background>
+
+        <!-- ComboBox for Player Count -->
         <ComboBox x:Name="cbbCount"
-                  HorizontalAlignment="Left"
-                  Height="40"
-                  Margin="400,244,0,0"
-                  VerticalAlignment="Top"
-                  Width="230"
-                  FontSize="20" BorderBrush="White">
+          HorizontalAlignment="Left"
+          Height="40"
+          Margin="400,244,0,0"
+          VerticalAlignment="Top"
+          Width="230"
+          FontSize="20" BorderBrush="White">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -29,16 +31,30 @@
             <ComboBoxItem Content="4 Players" />
         </ComboBox>
 
-        <TextBox x:Name="txtName"
-                 HorizontalAlignment="Left"
-                 Height="40"
-                 Margin="400,149,0,0"
-                 VerticalAlignment="Top"
-                 Width="340"
-                 FontSize="24"
-                 SelectionTextBrush="#FFEAEAEA"/>
-        <Button x:Name="btnback" Content="Button" BorderBrush="Transparent" Foreground="Transparent" Background="Transparent" Opacity="0" HorizontalAlignment="Left" Height="50" Margin="85,334,0,0" VerticalAlignment="Top" Width="135" Click="btnback_Click"/>
-        <Button x:Name="btnCreateRoom" BorderBrush="Transparent" Foreground="Transparent" Background="Transparent" Opacity="0" Content="Button" HorizontalAlignment="Left" Height="50" Margin="570,334,0,0" VerticalAlignment="Top" Width="145" Click="btnCreateRoom_Click"/>
 
+        <!-- TextBox for Player Name -->
+        <TextBox x:Name="txtName"
+         HorizontalAlignment="Left"
+         Height="40"
+         Margin="400,149,0,0"
+         VerticalAlignment="Top"
+         Width="340"
+         FontSize="24"
+         SelectionTextBrush="#FFEAEAEA"/>
+
+
+        <!-- Invisible Button to trigger CreateRoom logic -->
+        <Button x:Name="btnCreateRoom" 
+                BorderBrush="Transparent" 
+                Foreground="Transparent" 
+                Background="Transparent" 
+                Opacity="0" 
+                Content="Button" 
+                HorizontalAlignment="Left" 
+                Height="50" 
+                Margin="570,334,0,0" 
+                VerticalAlignment="Top" 
+                Width="145" 
+                Click="btnCreateRoom_Click"/>
     </Grid>
 </Window>

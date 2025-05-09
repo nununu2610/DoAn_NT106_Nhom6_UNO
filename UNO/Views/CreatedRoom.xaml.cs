@@ -1,43 +1,43 @@
 ﻿using System;
 using System.Windows;
-using UNO.Views.Game;
+using UNO.Client.Services;
 
 namespace UNO.Views
 {
-    /// <summary>
-    /// Interaction logic for CreatedRoom.xaml
-    /// </summary>
     public partial class CreatedRoom : Window
     {
         private string roomIP;
         private string selectedMode;
+        private string playerName;
+        private SocketClient client;
 
-        // Constructor nhận thông tin IP và chế độ số lượng người chơi
-        public CreatedRoom(string roomIP, string selectedMode)
+        public CreatedRoom(string roomIP, string selectedMode, string playerName, SocketClient client)
         {
             InitializeComponent();
             this.roomIP = roomIP;
             this.selectedMode = selectedMode;
+            this.playerName = playerName;
+            this.client = client;
 
-            // Hiển thị thông tin phòng
+            // Hiển thị thông tin phòng trong giao diện
             txtIP1.Text = $"Room IP: {roomIP}";
             txtMode.Text = $"Mode: {selectedMode}";
         }
 
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
+      
+
+        private void btnCreateRoom_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Mở cửa sổ WaitingRoom
-                WaitingRoom waitingRoom = new WaitingRoom(roomIP, selectedMode);
+                // Chuyển sang cửa sổ WaitingRoom sau khi nhấn nút Play
+                WaitingRoom waitingRoom = new WaitingRoom(roomIP, selectedMode, playerName, client);
                 waitingRoom.Show();
-
-                // Đóng cửa sổ CreatedRoom
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Có lỗi xảy ra khi chuyển sang WaitingRoom:\n" + ex.ToString(), "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("An error occurred while starting the game:\n" + ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

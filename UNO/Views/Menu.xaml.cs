@@ -1,24 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using UNO.Views;
 using UNO.Views.HowToPlay;
 
 namespace UNO.Views
 {
-    /// <summary>
-    /// Interaction logic for Menu.xaml
-    /// </summary>
     public partial class Menu : Window
     {
         public Menu()
@@ -26,21 +11,16 @@ namespace UNO.Views
             InitializeComponent();
         }
 
-  
         private void btnJoin_Click(object sender, RoutedEventArgs e)
         {
-            JoinRoom enterInfo = new JoinRoom(isJoinRoom: true);
+            JoinRoom enterInfo = new JoinRoom(); // Truyền tham số vào constructor nếu cần
             enterInfo.Show();
-           
         }
-
-
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            CreateRoom enterInfo = new CreateRoom(isCreatingRoom: true);  // Tạo một instance của CreateRoom
-            enterInfo.Show(); // Hiển thị cửa sổ CreateRoom
-             // Đóng cửa sổ hiện tại (Menu)
+            CreateRoom enterInfo = new CreateRoom(); // Truyền tham số vào constructor nếu cần
+            enterInfo.Show();
         }
 
         private void btnHowtoPlay_Click(object sender, RoutedEventArgs e)
