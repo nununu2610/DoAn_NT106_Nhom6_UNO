@@ -13,6 +13,7 @@
         <TextBox x:Name="txtNameJoin" HorizontalAlignment="Left" Height="40" Margin="390,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"  FontSize="24"/>
         <TextBox x:Name="txtIP" HorizontalAlignment="Left" Height="40" Margin="390,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" FontSize="24"/>
         <Button x:Name="btnBack" Content="Button" HorizontalAlignment="Left" Height="65" Margin="60,334,0,0" VerticalAlignment="Top" Width="130" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" Opacity="0" Click="btnBack_Click"/>
+        <Button x:Name="buttonPlay" Content="" BorderBrush="Transparent" Foreground="Transparent" Background="Transparent" Opacity="0" HorizontalAlignment="Left" Height="65" Margin="600,334,0,0" VerticalAlignment="Top" Width="130" Click="buttonPlay_Click"/>
 
     </Grid>
 </Window>
