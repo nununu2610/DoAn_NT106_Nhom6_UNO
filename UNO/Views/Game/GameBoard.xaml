@@ -8,8 +8,28 @@
         Title="GameBoard" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Images/START.png"/>
+            <ImageBrush ImageSource="/Images/BoardGame/Boardgame2p.png"/>
         </Grid.Background>
-
+        <Button x:Name="Player1Card1" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="120,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card2" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="200,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card3" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="280,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card4" Click="PlayCard_Click" Content="" HorizontalAlignment="Center" Height="120" Margin="0,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card5" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="440,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card6" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="520,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player1Card7" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="600,314,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card1" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="120,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card2" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="200,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card3" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="280,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card4" Click="PlayCard_Click" Content="" HorizontalAlignment="Center" Height="120" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card5" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="440,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card6" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="520,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="Player2Card7" Click="PlayCard_Click" Content="" HorizontalAlignment="Left" Height="120" Margin="600,0,0,0" VerticalAlignment="Top" Width="80"/>
+        <Image x:Name="TableCardImage" HorizontalAlignment="Left" Height="120" Margin="455,164,0,0" VerticalAlignment="Top" Width="85"/>
+        <Button x:Name="DrawCardButton" Content="" HorizontalAlignment="Left" Height="130" Margin="270,154,0,0" VerticalAlignment="Top" Width="90" Click="DrawCardButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/BoardGame/unosap.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="UNOButton" Foreground="Transparent" Background="Transparent" BorderBrush="Transparent" Opacity="0" Content="" HorizontalAlignment="Left" Height="70" Margin="580,184,0,0" VerticalAlignment="Top" Width="90" Click="UNOButton_Click"/>
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using UNO.Client.Services;
+using UNO.Views.Game;
 
 namespace UNO.Views
 {
@@ -20,15 +21,12 @@ namespace UNO.Views
             }
         }
 
-        // Sự kiện khi nhấn nút Join
-      
-
         // Logic tham gia phòng (Gọi SocketClient để thực hiện tham gia phòng)
         private bool JoinRoomLogic(string playerName, string roomIP)
         {
             SocketClient client = new SocketClient();
-            client.Connect("server_ip", 12345);  // Thay thế "server_ip" và port phù hợp với thông tin server của bạn
-            return client.JoinRoom(playerName, roomIP); // Gọi phương thức JoinRoom từ SocketClient
+            client.Connect(roomIP, 12345);  // Dùng đúng IP được nhập
+            return client.JoinRoom(playerName, roomIP);  // Chỉ cần gửi tên hoặc IP
         }
 
         private void buttonPlay_Click(object sender, RoutedEventArgs e)
@@ -47,12 +45,11 @@ namespace UNO.Views
             {
                 MessageBox.Show("Failed to join room.");
             }
-
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();  // Nếu nhấn Back, đóng cửa sổ JoinRoom
         }
     }
 }

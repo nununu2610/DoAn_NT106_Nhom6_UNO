@@ -31,7 +31,7 @@ namespace UNO.Views
         {
             JoinRoom enterInfo = new JoinRoom(isJoinRoom: true);
             enterInfo.Show();
-            this.Close();
+           
         }
 
 
@@ -40,7 +40,7 @@ namespace UNO.Views
         {
             CreateRoom enterInfo = new CreateRoom(isCreatingRoom: true);  // Tạo một instance của CreateRoom
             enterInfo.Show(); // Hiển thị cửa sổ CreateRoom
-            this.Close(); // Đóng cửa sổ hiện tại (Menu)
+             // Đóng cửa sổ hiện tại (Menu)
         }
 
         private void btnHowtoPlay_Click(object sender, RoutedEventArgs e)
