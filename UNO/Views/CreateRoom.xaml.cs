@@ -2,6 +2,7 @@
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
+using static UNO.Views.CreatedRoom;
 
 namespace UNO.Views
 {
@@ -42,6 +43,9 @@ namespace UNO.Views
 
         private void btnCreateRoom_Click(object sender, RoutedEventArgs e)
         {
+            GameServer gameServer = new GameServer();  // Tạo đối tượng GameServer
+            gameServer.Start();  // Khởi động server, sử dụng phương thức Start() từ GameServer
+
             string localIP = GetLocalIPAddress();
 
             // Lấy chế độ chơi từ ComboBox

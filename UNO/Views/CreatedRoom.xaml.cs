@@ -31,6 +31,15 @@ namespace UNO.Views
             txtMode.Text = mode;
         }
 
+        public class GameServer
+        {
+            public void Start()
+            {
+                // Code để khởi động server
+                Console.WriteLine("Server started...");
+            }
+        }
+
         public CreatedRoom()
         {
             InitializeComponent();
@@ -38,15 +47,17 @@ namespace UNO.Views
 
         private void btnPlay_Click(object sender, RoutedEventArgs e)
         {
-            GameServer gameServer = new GameServer();  // Tạo đối tượng GameServer
-            gameServer.Start();  // Khởi động server, sử dụng phương thức Start() từ GameServer
+           
 
-            // 2. Mở giao diện GameBoard
+
+            // Mở giao diện GameBoard sau khi khởi động server
             GameBoard boardWindow = new GameBoard();
-            boardWindow.Show();
+            Application.Current.MainWindow = boardWindow;
 
-            // 3. Đóng CreateRoom nếu cần
-            this.Close(); // hoặc this.Hide() nếu muốn giữ CreateRoom ở background
+            boardWindow.Show();  // Hiển thị GameBoard
+
+            this.Hide();  // Đóng cửa sổ CreatedRoom
+           
         }
     }
 }
