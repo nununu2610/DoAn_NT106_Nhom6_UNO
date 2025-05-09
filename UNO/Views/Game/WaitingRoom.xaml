@@ -1,0 +1,13 @@
+﻿<Window x:Class="UNO.Views.WaitingRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WaitingRoom" Height="450" Width="800">
+    <Grid>
+
+        <TextBlock x:Name="txtRoomIP" HorizontalAlignment="Left" Height="40" Margin="299,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347" FontSize="24" Background="#FFFDF9F9"/>
+        <TextBlock x:Name="txtMode" HorizontalAlignment="Left" Height="40" Margin="345,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Background="#FFFDF9F9" FontSize="24"/>
+
+        <!-- Other UI elements for WaitingRoom -->
+
+    </Grid>
+</Window>

@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using UNO.Server.Services;
 using UNO.Views.Game;
 
 namespace UNO.Views
@@ -21,43 +9,36 @@ namespace UNO.Views
     /// </summary>
     public partial class CreatedRoom : Window
     {
+        private string roomIP;
+        private string selectedMode;
 
-        public CreatedRoom(string ip, string mode)
+        // Constructor nhận thông tin IP và chế độ số lượng người chơi
+        public CreatedRoom(string roomIP, string selectedMode)
         {
             InitializeComponent();
+            this.roomIP = roomIP;
+            this.selectedMode = selectedMode;
 
-            // Hiển thị IP và chế độ chơi
-            txtIP1.Text = ip;
-            txtMode.Text = mode;
-        }
-
-        public class GameServer
-        {
-            public void Start()
-            {
-                // Code để khởi động server
-                Console.WriteLine("Server started...");
-            }
-        }
-
-        public CreatedRoom()
-        {
-            InitializeComponent();
+            // Hiển thị thông tin phòng
+            txtIP1.Text = $"Room IP: {roomIP}";
+            txtMode.Text = $"Mode: {selectedMode}";
         }
 
         private void btnPlay_Click(object sender, RoutedEventArgs e)
         {
-           
+            try
+            {
+                // Mở cửa sổ WaitingRoom
+                WaitingRoom waitingRoom = new WaitingRoom(roomIP, selectedMode);
+                waitingRoom.Show();
 
-
-            // Mở giao diện GameBoard sau khi khởi động server
-            GameBoard boardWindow = new GameBoard();
-            Application.Current.MainWindow = boardWindow;
-
-            boardWindow.Show();  // Hiển thị GameBoard
-
-            this.Hide();  // Đóng cửa sổ CreatedRoom
-           
+                // Đóng cửa sổ CreatedRoom
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra khi chuyển sang WaitingRoom:\n" + ex.ToString(), "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

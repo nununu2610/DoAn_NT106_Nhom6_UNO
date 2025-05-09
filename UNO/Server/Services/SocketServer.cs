@@ -80,14 +80,19 @@ namespace UNO.Server
 
             try
             {
-                using NetworkStream stream = client.GetStream();
+                NetworkStream stream = client.GetStream();
                 byte[] buffer = new byte[1024];
-                int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                Console.WriteLine("Received from client: " + message);
 
-                // Phân tích thông điệp nhận được từ client
-                ProcessClientMessage(message, client, stream);
+                while (true) // <-- giữ kết nối
+                {
+                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                    if (bytesRead == 0) break; // client ngắt
+
+                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    Console.WriteLine("Received from client: " + message);
+
+                    ProcessClientMessage(message, client, stream);
+                }
             }
             catch (Exception ex)
             {
@@ -95,10 +100,12 @@ namespace UNO.Server
             }
             finally
             {
-                client.Close(); // Đóng kết nối với client
+                client.Close();
             }
         }
 
+
+        // Xử lý thông điệp của client (JOIN, các lệnh khác)
         // Xử lý thông điệp của client (JOIN, các lệnh khác)
         private void ProcessClientMessage(string message, TcpClient client, NetworkStream stream)
         {
@@ -112,37 +119,31 @@ namespace UNO.Server
 
                     // Tìm hoặc tạo phòng
                     GameRoom room = GetOrCreateGameRoom(roomIP);
-                    if (room.AddPlayer(client, playerName)) // Thêm người chơi vào phòng, kiểm tra giới hạn
+                    if (!room.IsFull)
                     {
-                        // Gửi phản hồi OK
                         byte[] okResponse = Encoding.UTF8.GetBytes("OK");
-                        stream.Write(okResponse, 0, okResponse.Length);
+                        stream.Write(okResponse, 0, okResponse.Length);  // Phản hồi thành công
+
+                        // Sau đó thêm player vào phòng
+                        room.AddPlayer(client, playerName);
                     }
                     else
                     {
-                        // Gửi phản hồi phòng đầy
                         byte[] failResponse = Encoding.UTF8.GetBytes("ROOM_FULL");
-                        stream.Write(failResponse, 0, failResponse.Length);
+                        stream.Write(failResponse, 0, failResponse.Length);  // Phản hồi phòng đầy
                     }
                 }
                 else
                 {
                     byte[] failResponse = Encoding.UTF8.GetBytes("INVALID_FORMAT");
-                    stream.Write(failResponse, 0, failResponse.Length);
+                    stream.Write(failResponse, 0, failResponse.Length);  // Phản hồi lỗi định dạng
                 }
             }
-            else if (message.StartsWith("START"))
-            {
-                // Xử lý lệnh START nếu cần
-                byte[] startResponse = Encoding.UTF8.GetBytes("STARTING_GAME");
-                stream.Write(startResponse, 0, startResponse.Length);
-            }
-            else
-            {
-                byte[] unknownCommand = Encoding.UTF8.GetBytes("UNKNOWN_COMMAND");
-                stream.Write(unknownCommand, 0, unknownCommand.Length);
-            }
         }
+
+
+
+
 
         // Tìm phòng hoặc tạo mới nếu không có
         private GameRoom GetOrCreateGameRoom(string roomIP)

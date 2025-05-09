@@ -66,6 +66,13 @@ namespace UNO.Views.Game
             List<string> cards = new List<string>(allCardPaths);
             Shuffle(cards);  // Trộn bài
 
+            if (cards.Count < 15)
+            {
+                MessageBox.Show($"Không đủ lá bài để bắt đầu trò chơi. Hiện có {cards.Count} lá.");
+                this.Close();  // Đóng cửa sổ hoặc xử lý khác tùy bạn
+                return;
+            }
+
             // Chia bài cho player 1
             for (int i = 0; i < 7; i++)
             {
@@ -90,7 +97,6 @@ namespace UNO.Views.Game
                 (list[i], list[j]) = (list[j], list[i]);  // Hoán đổi 2 phần tử
             }
         }
-
         private void SetButtonImage(Button btn, string imagePath)
         {
             Image img = new Image

@@ -17,15 +17,16 @@ namespace UNO.Client.Services
                 client = new TcpClient();
                 client.Connect(ip, port);
                 stream = client.GetStream();
-                Console.WriteLine("Connected to server.");
+                Console.WriteLine($"Connected to server at {ip}:{port}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error connecting to server: " + ex.Message);
+                Console.WriteLine($"Error connecting to server: {ex.Message}");
             }
         }
 
         // Tham gia phòng game
+        // Gửi thông điệp tới server và nhận phản hồi
         public bool JoinRoom(string playerName, string roomIP)
         {
             try
@@ -40,12 +41,26 @@ namespace UNO.Client.Services
                 byte[] messageBytes = Encoding.UTF8.GetBytes(joinMessage);
                 stream.Write(messageBytes, 0, messageBytes.Length);
 
-                // Nhận phản hồi từ server
+                // Đảm bảo buffer được đọc đầy đủ dữ liệu
                 byte[] buffer = new byte[1024];
-                int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                string response = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                int bytesRead = 0;
+                StringBuilder responseBuilder = new StringBuilder();
 
-                Console.WriteLine("Server response: " + response);
+                while (true)
+                {
+                    bytesRead = stream.Read(buffer, 0, buffer.Length);
+                    responseBuilder.Append(Encoding.UTF8.GetString(buffer, 0, bytesRead));
+
+                    // Dừng lại khi nhận đầy đủ phản hồi từ server
+                    if (bytesRead < buffer.Length)
+                    {
+                        break;
+                    }
+                }
+
+                string response = responseBuilder.ToString();
+                Console.WriteLine($"Server response: '{response}'");
+
                 return response.Contains("OK");
             }
             catch (Exception ex)
@@ -54,6 +69,9 @@ namespace UNO.Client.Services
                 return false;
             }
         }
+
+
+
 
         // Gửi thông điệp tới server
         public void SendMessage(string message)
@@ -75,6 +93,8 @@ namespace UNO.Client.Services
                 Console.WriteLine("Error sending message: " + ex.Message);
             }
         }
+
+
 
         // Ngắt kết nối khỏi server
         public void Disconnect()

@@ -45,3 +45,5 @@ D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\refint\UNO.dll
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\UNO.pdb
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\UNO.genruntimeconfig.cache
 D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\ref\UNO.dll
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\Game\WaitingRoom.g.cs
+D:\NT106\DoAn_UNO\UNO\UNO\obj\Debug\net8.0-windows\Views\Game\WaitingRoom.baml

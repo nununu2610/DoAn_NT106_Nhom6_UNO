@@ -10,6 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\BoardGame\Boardgame2p.png" />
+    <None Remove="Images\BoardGame\startbutton.png" />
+    <None Remove="Images\BoardGame\unosap.jpg" />
     <None Remove="Images\Create room %283%29.png" />
     <None Remove="Images\Home %281%29.png" />
     <None Remove="Images\How to play %281%29.png" />
@@ -27,6 +30,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\BoardGame\Boardgame2p.png" />
+    <Resource Include="Images\BoardGame\startbutton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\BoardGame\unosap.jpg" />
     <Resource Include="Images\Create room (3).png" />
   </ItemGroup>
 
