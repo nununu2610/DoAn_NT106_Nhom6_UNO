@@ -12,7 +12,6 @@ namespace UNO.Views
         private List<string> players;
         private SocketClient client;
 
-        // Cập nhật constructor để nhận 4 tham số
         public WaitingRoom(string roomID, string mode, string playerName, SocketClient client)
         {
             InitializeComponent();
@@ -36,21 +35,22 @@ namespace UNO.Views
 
         public void AddPlayer(string newPlayerName)
         {
-            // Thêm người chơi mới vào danh sách và cập nhật UI
-            players.Add(newPlayerName);
-            UpdatePlayerList();
+            if (!players.Contains(newPlayerName)) // tránh trùng tên
+            {
+                players.Add(newPlayerName);
+                UpdatePlayerList();
+            }
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Kiểm tra điều kiện để bắt đầu trò chơi (ví dụ: ít nhất 2 người chơi)
                 if (players.Count >= 2)
                 {
-                    // Bắt đầu trò chơi (gửi yêu cầu tới server hoặc bắt đầu trò chơi trên client)
-                    client.StartGame(roomID);
+                    client.StartGame(roomID); // Không lỗi nếu SocketClient đã có hàm này
                     MessageBox.Show("Game started!", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // TODO: Mở giao diện GameBoard tại đây nếu có
                 }
                 else
                 {

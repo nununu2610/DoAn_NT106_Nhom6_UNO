@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "D:\\NT106\\DoAn_UNO\\UNO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\client\\services\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\client\\services\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createdroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createdroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createdroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createdroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\joinroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\joinroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +13,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\game\\waitingroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\game\\waitingroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\client\\services\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\client\\services\\socketclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\server\\services\\socketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createdroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createdroom.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\createdroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|solutionrelative:uno\\views\\createdroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B47BC6E7-1705-468D-8D36-58571E6DDFE7}|UNO\\UNO.csproj|d:\\nt106\\doan_uno\\uno\\uno\\views\\game\\waitingroom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -149,62 +149,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CreateRoom.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreateRoom.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\CreateRoom.xaml.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreateRoom.xaml.cs",
               "RelativeToolTip": "UNO\\Views\\CreateRoom.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T07:22:21.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreatedRoom.xaml.cs",
-              "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml.cs",
-              "RelativeDocumentMoniker": "UNO\\Views\\CreatedRoom.xaml.cs",
-              "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml.cs",
-              "RelativeToolTip": "UNO\\Views\\CreatedRoom.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:33:26.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CreatedRoom.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\CreatedRoom.xaml",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml",
               "RelativeToolTip": "UNO\\Views\\CreatedRoom.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T23:24:11.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T23:24:11.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "JoinRoom.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\JoinRoom.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\JoinRoom.xaml.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\JoinRoom.xaml.cs",
               "RelativeToolTip": "UNO\\Views\\JoinRoom.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwC8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T15:45:09.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "JoinRoom.xaml",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\JoinRoom.xaml",
               "RelativeDocumentMoniker": "UNO\\Views\\JoinRoom.xaml",
@@ -216,42 +202,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SocketServer.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\SocketServer.cs",
               "RelativeDocumentMoniker": "UNO\\Server\\Services\\SocketServer.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Server\\Services\\SocketServer.cs",
               "RelativeToolTip": "UNO\\Server\\Services\\SocketServer.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAAAYwN0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowHAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T07:09:33.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SocketClient.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Client\\Services\\SocketClient.cs",
               "RelativeDocumentMoniker": "UNO\\Client\\Services\\SocketClient.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Client\\Services\\SocketClient.cs",
               "RelativeToolTip": "UNO\\Client\\Services\\SocketClient.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowB4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAowE4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T15:43:45.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "WaitingRoom.xaml.cs",
               "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\WaitingRoom.xaml.cs",
               "RelativeDocumentMoniker": "UNO\\Views\\Game\\WaitingRoom.xaml.cs",
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\WaitingRoom.xaml.cs",
               "RelativeToolTip": "UNO\\Views\\Game\\WaitingRoom.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAApwDUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T08:40:10.93Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreatedRoom.xaml.cs",
+              "DocumentMoniker": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml.cs",
+              "RelativeDocumentMoniker": "UNO\\Views\\CreatedRoom.xaml.cs",
+              "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreatedRoom.xaml.cs",
+              "RelativeToolTip": "UNO\\Views\\CreatedRoom.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwCEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:33:26.028Z"
             },
             {
               "$type": "Document",
@@ -262,8 +260,7 @@
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\WaitingRoom.xaml",
               "RelativeToolTip": "UNO\\Views\\Game\\WaitingRoom.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-09T08:40:07.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:40:07.788Z"
             },
             {
               "$type": "Document",
@@ -274,8 +271,7 @@
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\CreateRoom.xaml",
               "RelativeToolTip": "UNO\\Views\\CreateRoom.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T16:30:37.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T16:30:37.22Z"
             },
             {
               "$type": "Document",
@@ -287,8 +283,7 @@
               "RelativeToolTip": "UNO\\Views\\Menu.xaml.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAowBYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T23:24:41.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T23:24:41.765Z"
             },
             {
               "$type": "Document",
@@ -300,8 +295,7 @@
               "RelativeToolTip": "UNO\\Server\\Services\\GameRoom.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA7wBUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T15:59:15.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T15:59:15.728Z"
             },
             {
               "$type": "Document",
@@ -313,8 +307,7 @@
               "RelativeToolTip": "UNO\\Views\\Game\\GameBoard.xaml.cs",
               "ViewState": "AgIAAJwAAAAAAAAAAAAAwKYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T09:44:05.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T09:44:05.773Z"
             },
             {
               "$type": "Document",
@@ -324,8 +317,7 @@
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAOYUAAAAAAAAAAAswPcUAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-05-09T16:23:57.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T16:23:57.546Z"
             },
             {
               "$type": "Document",
@@ -336,8 +328,7 @@
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Game\\GameBoard.xaml",
               "RelativeToolTip": "UNO\\Views\\Game\\GameBoard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T09:43:18.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T09:43:18.691Z"
             },
             {
               "$type": "Document",
@@ -373,8 +364,7 @@
               "RelativeToolTip": "UNO\\UNO.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T15:41:35.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T15:41:35.889Z"
             },
             {
               "$type": "Document",
@@ -408,8 +398,7 @@
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Menu.xaml",
               "RelativeToolTip": "UNO\\Views\\Menu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T23:24:38.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T23:24:38.609Z"
             },
             {
               "$type": "Document",
@@ -570,8 +559,7 @@
               "ToolTip": "D:\\NT106\\DoAn_UNO\\UNO\\UNO\\Views\\Home.xaml",
               "RelativeToolTip": "UNO\\Views\\Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T23:24:16.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T23:24:16.354Z"
             }
           ]
         }

@@ -112,7 +112,7 @@ namespace UNO.Server
                     {
                         string playerName = parts[1];
                         string mode = parts[2];
-                        string roomID = Guid.NewGuid().ToString().Substring(0, 6);
+                        string roomID = Guid.NewGuid().ToString("N").Substring(0, 6).ToUpper();
 
                         GameRoom room = new GameRoom(roomID);
                         room.AddPlayer(new Player { Name = playerName, Stream = stream });
